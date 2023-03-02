@@ -5,13 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hero Motocorp - Wheel of Trust</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://otpless.com/auth.js"></script>
 </head>
 
 <body>
+
+    <section class="logosection">
+        <div class="container">
+            <div class="row1">
+                <div class="row d-flex flex-wrap mb-2 mt-2">
+                    <div class="col-6 herologobox ">
+                        <a href="https://www.heromotocorp.com/" target="_blank">
+                            <picture>
+                                <source media="(max-width: 799px)"
+                                    srcset="https://www.wheelsoftrust.com/web-assets/images/icons/herologo.png">
+                                <source srcset="https://www.wheelsoftrust.com/web-assets/images/icons/herologo.png">
+                                <img src="https://www.wheelsoftrust.com/web-assets/images/icons/herologo.png"
+                                    alt="Logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-6 logobox text-right">
+                        <a href="/" class="logo-show-modal">
+                            <picture>
+                                <source media="(max-width: 799px)"
+                                    srcset="https://www.wheelsoftrust.com/web-assets/images/icons/logo-wot.svg">
+                                <source srcset="https://www.wheelsoftrust.com/web-assets/images/icons/logo-wot.svg">
+                                <img src="https://www.wheelsoftrust.com/web-assets/images/icons/logo-wot.svg"
+                                    alt="Logo">
+                            </picture>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section class="signup-step-container">
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -148,9 +185,9 @@
 
                                     <ul class="list-inline pull-right">
                                         <li><button type="button" class="default-btn prev-step">Back</button></li>
-                                        <li><button type="button" class="default-btn next-step skip-btn">Skip</button>
                                         </li>
-                                        <li><button type="button" class="default-btn next-step">Continue</button></li>
+                                        <li><button type="button" class="default-btn next-step"
+                                                onclick="otplessInit()">Continue</button></li>
                                     </ul>
                                 </div>
                                 <div class="tab-pane" role="tabpanel" id="step3">
@@ -163,7 +200,6 @@
                                     </div>
                                     <ul class="list-inline pull-right">
                                         <li><button type="button" class="default-btn prev-step">Back</button></li>
-                                        <li><button type="button" class="default-btn next-step skip-btn">Skip</button>
                                         </li>
                                         <li><button type="button" class="default-btn next-step">Continue</button></li>
                                     </ul>
