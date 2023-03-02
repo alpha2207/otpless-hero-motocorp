@@ -199,7 +199,7 @@
                                     <h4 class="text-center">Step 3</h4>
                                     <div class="row">
                                         <div class="col d-flex justify-content-center mx-6">
-                                            <h4 id="success-info"></h4>
+                                            <h4 class="success-info"></h4>
                                             <div id="otpless"></div>
                                         </div>
                                     </div>
@@ -217,11 +217,12 @@
                                     </ul>
                                 </div>
                                 <div class="tab-pane" role="tabpanel" id="step4">
-                                    
+
                                     <h4 class="text-center">Step 4</h4>
                                     <div class="all-info-container">
                                         <div class="container">
                                             <div class="vehicle_Valuation formStepContent active" id="your_Valuation">
+                                                <h4 class="success-info"></h4>
                                                 <h3 class="primaryBg">
                                                     <img src="https://www.wheelsoftrust.com/web-assets/images/icons/Motorcycle.svg"
                                                         alt="" />
@@ -411,9 +412,11 @@
 
             const otplessDiv = document.getElementById("otpless");
             otplessDiv.style.display = "none";
-            const successPara = document.getElementById("success-info");
-            successPara.innerHTML = `Hi, ${waName}<br /> Phone Number :${waNumber}`;
             console.log(waName, waNumber);
+            const successPara = document.getElementsByClassName("success-info");
+            for (let index = 0; index < successPara.length; index++) {
+                successPara[index].innerHTML = `Hi, ${waName}<br> Phone Number: ${waNumber}`
+            }
             // Signup/signin the user and redirect to next page
         }
 
