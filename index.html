@@ -1,676 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Motocorp - Wheel of Trust</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="https://otpless.com/auth.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <section class="logosection">
-      <div class="container">
-        <div class="row1">
-          <div class="row d-flex flex-wrap mb-2 mt-2">
-            <div class="col-6 herologobox">
-              <a href="https://www.heromotocorp.com/" target="_blank">
-                <picture>
-                  <source
-                    media="(max-width: 799px)"
-                    srcset="
+        <div class="container">
+            <div class="row1">
+                <div class="row d-flex flex-wrap mb-2 mt-2">
+                    <div class="col-6 herologobox">
+                        <a href="https://www.heromotocorp.com/" target="_blank">
+                            <picture>
+                                <source media="(max-width: 799px)" srcset="
                       https://www.wheelsoftrust.com/web-assets/images/icons/herologo.png
-                    "
-                  />
-                  <source
-                    srcset="
+                    " />
+                                <source srcset="
                       https://www.wheelsoftrust.com/web-assets/images/icons/herologo.png
-                    "
-                  />
-                  <img
-                    src="https://www.wheelsoftrust.com/web-assets/images/icons/herologo.png"
-                    alt="Logo"
-                  />
-                </picture>
-              </a>
-            </div>
-            <div class="col-6 logobox text-right">
-              <a href="/" class="logo-show-modal">
-                <picture>
-                  <source
-                    media="(max-width: 799px)"
-                    srcset="
+                    " />
+                                <img src="https://www.wheelsoftrust.com/web-assets/images/icons/herologo.png"
+                                    alt="Logo" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-6 logobox text-right">
+                        <a href="/" class="logo-show-modal">
+                            <picture>
+                                <source media="(max-width: 799px)" srcset="
                       https://www.wheelsoftrust.com/web-assets/images/icons/logo-wot.svg
-                    "
-                  />
-                  <source
-                    srcset="
+                    " />
+                                <source srcset="
                       https://www.wheelsoftrust.com/web-assets/images/icons/logo-wot.svg
-                    "
-                  />
-                  <img
-                    src="https://www.wheelsoftrust.com/web-assets/images/icons/logo-wot.svg"
-                    alt="Logo"
-                  />
-                </picture>
-              </a>
+                    " />
+                                <img src="https://www.wheelsoftrust.com/web-assets/images/icons/logo-wot.svg"
+                                    alt="Logo" />
+                            </picture>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="signup-step-container">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-8">
-            <div class="wizard">
-              <div class="wizard-inner">
-                <div class="connecting-line"></div>
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active dots">
-                    <a
-                      href="#step1"
-                      data-toggle="tab"
-                      aria-controls="step1"
-                      role="tab"
-                      aria-expanded="true"
-                      ><span class="round-tab">1 </span> <i>Step 1</i></a
-                    >
-                  </li>
-                  <li role="presentation" class="disabled dots">
-                    <a
-                      href="#step2"
-                      data-toggle="tab"
-                      aria-controls="step2"
-                      role="tab"
-                      aria-expanded="false"
-                      ><span class="round-tab">2</span> <i>Step 2</i></a
-                    >
-                  </li>
-                  <li role="presentation" class="disabled dots">
-                    <a
-                      href="#step3"
-                      data-toggle="tab"
-                      aria-controls="step3"
-                      role="tab"
-                      ><span class="round-tab">3</span> <i>Step 3</i></a
-                    >
-                  </li>
-                  <li role="presentation" class="disabled dots">
-                    <a
-                      href="#step4"
-                      data-toggle="tab"
-                      aria-controls="step4"
-                      role="tab"
-                      ><span class="round-tab">4</span> <i>Step 4</i></a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <form role="form" action="index.html" class="login-box">
-                <div class="tab-content" id="main_form">
-                  <div class="tab-pane active" role="tabpanel" id="step1">
-                    <h4 class="text-center">Step 1</h4>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Select State *</label>
-                          <select name="state" class="form-control" id="state">
-                            <option value="Assam">Assam</option>
-                            <option value="Andhra">Andhra</option>
-                            <option value="Bihar">Bihar</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Select City *</label>
-                          <select
-                            title="Select City"
-                            name="city"
-                            class="form-control"
-                            id="city"
-                          >
-                            <option value="Surat">Surat</option>
-                            <option value="Bihar">Vadodara</option>
-                            <option value="Vapi">Vapi</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Select Company*</label>
-                          <select
-                            title="Select City"
-                            name="company"
-                            class="form-control"
-                            id="company"
-                          >
-                            <option value="Hero">Hero</option>
-                            <option value="Honda">Honda</option>
-                            <option value="TVS">TVS</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Select Model*</label>
-                          <select
-                            title="model"
-                            name="model"
-                            class="form-control"
-                            id="model"
-                          >
-                            <option value="Splendor">Splendor</option>
-                            <option value="Passion">Passion</option>
-                            <option value="Platina">Platina</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <ul class="list-inline pull-right">
-                      <li>
-                        <button type="button" class="default-btn next-step">
-                          Continue to next step
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tab-pane" role="tabpanel" id="step2">
-                    <h4 class="text-center">Step 2</h4>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label
-                            >Is there any Smoke coming from the silencer?</label
-                          ><br />
-                          <input
-                            type="checkbox"
-                            id="smoke"
-                            name="smoke"
-                            value="smoke"
-                          />
-                          <label for="male">Smoke</label>
-                          <input
-                            type="checkbox"
-                            id="no-smoke"
-                            name="no-smoke"
-                            value="no-smoke"
-                            class="mr-16"
-                          />
-                          <label for="no-smoke">No smoke</label>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label
-                            >Is there any problem in Starting the
-                            vehicle?</label
-                          ><br />
-                          <input
-                            type="checkbox"
-                            id="Not Starting"
-                            name="starts"
-                            value="starts"
-                          />
-                          <label for="starts">Starts Normally</label>
-                          <input
-                            type="checkbox"
-                            id="no-smoke"
-                            name="not-starts"
-                            class="mr-16"
-                            value="not-starts"
-                          />
-                          <label for="not-starts">Not Starting</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label
-                            >Is there any problem in the working of Lights &
-                            Indicators?</label
-                          ><br />
-                          <input
-                            type="checkbox"
-                            id="working"
-                            name="working"
-                            value="working"
-                          />
-                          <label for="working">Working</label>
-                          <input
-                            type="checkbox"
-                            id="not-working"
-                            name="not-working"
-                            class="mr-16"
-                            value="not-working"
-                          />
-                          <label for="not-working">Not working</label>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>What is the condition of the Front Tyre?</label
-                          ><br />
-                          <input
-                            type="checkbox"
-                            id="fine"
-                            name="fine"
-                            value="fine"
-                          />
-                          <label for="working">Fine</label>
-                          <input
-                            type="checkbox"
-                            id="not-working"
-                            name="not-fine"
-                            value="orn-out"
-                            class="mr-16"
-                          />
-                          <label for="not-working">Worn out</label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <ul class="list-inline pull-right">
-                      <li>
-                        <button type="button" class="default-btn prev-step">
-                          Back
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="default-btn next-step">
-                          Continue
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- <div id="otpless"></div> -->
-                  <div class="tab-pane" id="step3">
-                    <h4 class="text-center">Step 3</h4>
-                    <div class="row">
-                      <div class="col d-flex justify-content-center mx-6">
-                        <div id="otpless"></div>
-                      </div>
-                    </div>
-                    <ul class="list-inline pull-right">
-                      <li>
-                        <button type="button" class="default-btn prev-step">
-                          Back
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="default-btn next-step">
-                          Continue
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tab-pane" role="tabpanel" id="step4">
-                    <h4 id="success-info"></h4>
-                    <h4 class="text-center">Step 4</h4>
-                    <div class="all-info-container">
-                      <div class="container">
-                        <div
-                          class="vehicle_Valuation formStepContent active"
-                          id="your_Valuation"
-                        >
-                          <h3 class="primaryBg">
-                            <img
-                              src="https://www.wheelsoftrust.com/web-assets/images/icons/Motorcycle.svg"
-                              alt=""
-                            />
-                            Avantura Choppers PRAVEGA 2023
-                          </h3>
-                          <p>
-                            Based on your assessment, your two-wheeler is in
-                            <strong>
-                              <span class="green"> Very Good</span></strong
-                            >
-                            Condition.
-                          </p>
-                          <p>
-                            Our estimated
-                            <span class="valuePopopen">resale value </span> for
-                            your vehicle is:
-                          </p>
-                          <div class="estimated_price">
-                            <p><span class="currency">₹</span></p>
-                            <h4>1741425 - 1842540</h4>
-                          </div>
-                          <p>
-                            message.Please visit the nearest hero dealership for
-                            detailed inspection and spot buy offer and also get
-                            a certification report for free!
-                          </p>
-
-                          <div class="valuePopup">
-                            <div class="valuePopupContent">
-                              <ol>
-                                <li>
-                                  The resale value of the two-wheeler as
-                                  estimated by “Wheels of Trust” valuation
-                                  methodology is indicative and may vary based
-                                  actual condition of the vehicle and market
-                                  demand.
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+                    <div class="wizard">
+                        <div class="wizard-inner">
+                            <div class="connecting-line"></div>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active dots">
+                                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"
+                                        aria-expanded="true"><span class="round-tab">1 </span> <i>Step 1</i></a>
                                 </li>
-                                <li>
-                                  Wheels of Trust cannot be held responsible for
-                                  any losses incurred or liability arising by
-                                  relying on this indicative resale value.
+                                <li role="presentation" class="disabled dots">
+                                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
+                                        aria-expanded="false"><span class="round-tab">2</span> <i>Step 2</i></a>
                                 </li>
-                                <li>
-                                  The user allows Wheels of Trust to share their
-                                  information with automotive dealers for
-                                  contacting them with offers and services.
+                                <li role="presentation" class="disabled dots">
+                                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span
+                                            class="round-tab">3</span> <i>Step 3</i></a>
                                 </li>
-                                <li>
-                                  Wheels of Trust is a registered trademark of
-                                  Hero MotoCorp Ltd. Engaged in the pre-owned
-                                  two-wheeler services. The user allows Wheels
-                                  of Trust to use this information for their
-                                  internal analytics for refining their service
-                                  offerings.
+                                <li role="presentation" class="disabled dots">
+                                    <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span
+                                            class="round-tab">4</span> <i>Step 4</i></a>
                                 </li>
-                              </ol>
+                            </ul>
+                        </div>
+
+                        <form role="form" action="index.html" class="login-box">
+                            <div class="tab-content" id="main_form">
+                                <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <h4 class="text-center">Step 1</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select State *</label>
+                                                <select name="state" class="form-control" id="state">
+                                                    <option value="Assam">Assam</option>
+                                                    <option value="Andhra">Andhra</option>
+                                                    <option value="Bihar">Bihar</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select City *</label>
+                                                <select title="Select City" name="city" class="form-control" id="city">
+                                                    <option value="Surat">Surat</option>
+                                                    <option value="Bihar">Vadodara</option>
+                                                    <option value="Vapi">Vapi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select Company*</label>
+                                                <select title="Select City" name="company" class="form-control"
+                                                    id="company">
+                                                    <option value="Hero">Hero</option>
+                                                    <option value="Honda">Honda</option>
+                                                    <option value="TVS">TVS</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select Model*</label>
+                                                <select title="model" name="model" class="form-control" id="model">
+                                                    <option value="Splendor">Splendor</option>
+                                                    <option value="Passion">Passion</option>
+                                                    <option value="Platina">Platina</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-inline pull-right">
+                                        <li>
+                                            <button type="button" class="default-btn next-step">
+                                                Continue to next step
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step2">
+                                    <h4 class="text-center">Step 2</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Is there any Smoke coming from the silencer?</label><br />
+                                                <input type="checkbox" id="smoke" name="smoke" value="smoke" />
+                                                <label for="male">Smoke</label>
+                                                <input type="checkbox" id="no-smoke" name="no-smoke" value="no-smoke"
+                                                    class="mr-16" />
+                                                <label for="no-smoke">No smoke</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Is there any problem in Starting the
+                                                    vehicle?</label><br />
+                                                <input type="checkbox" id="Not Starting" name="starts" value="starts" />
+                                                <label for="starts">Starts Normally</label>
+                                                <input type="checkbox" id="no-smoke" name="not-starts" class="mr-16"
+                                                    value="not-starts" />
+                                                <label for="not-starts">Not Starting</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Is there any problem in the working of Lights &
+                                                    Indicators?</label><br />
+                                                <input type="checkbox" id="working" name="working" value="working" />
+                                                <label for="working">Working</label>
+                                                <input type="checkbox" id="not-working" name="not-working" class="mr-16"
+                                                    value="not-working" />
+                                                <label for="not-working">Not working</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>What is the condition of the Front Tyre?</label><br />
+                                                <input type="checkbox" id="fine" name="fine" value="fine" />
+                                                <label for="working">Fine</label>
+                                                <input type="checkbox" id="not-working" name="not-fine" value="orn-out"
+                                                    class="mr-16" />
+                                                <label for="not-working">Worn out</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-inline pull-right">
+                                        <li>
+                                            <button type="button" class="default-btn prev-step">
+                                                Back
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="default-btn next-step">
+                                                Continue
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <div id="otpless"></div> -->
+                                <div class="tab-pane" id="step3">
+                                    <h4 class="text-center">Step 3</h4>
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-center mx-6">
+                                            <h4 id="success-info"></h4>
+                                            <div id="otpless"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-inline pull-right">
+                                        <li>
+                                            <button type="button" class="default-btn prev-step">
+                                                Back
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="default-btn next-step">
+                                                Continue
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step4">
+                                    
+                                    <h4 class="text-center">Step 4</h4>
+                                    <div class="all-info-container">
+                                        <div class="container">
+                                            <div class="vehicle_Valuation formStepContent active" id="your_Valuation">
+                                                <h3 class="primaryBg">
+                                                    <img src="https://www.wheelsoftrust.com/web-assets/images/icons/Motorcycle.svg"
+                                                        alt="" />
+                                                    Avantura Choppers PRAVEGA 2023
+                                                </h3>
+                                                <p>
+                                                    Based on your assessment, your two-wheeler is in
+                                                    <strong>
+                                                        <span class="green"> Very Good</span></strong>
+                                                    Condition.
+                                                </p>
+                                                <p>
+                                                    Our estimated
+                                                    <span class="valuePopopen">resale value </span> for
+                                                    your vehicle is:
+                                                </p>
+                                                <div class="estimated_price">
+                                                    <p><span class="currency">₹</span></p>
+                                                    <h4>1741425 - 1842540</h4>
+                                                </div>
+                                                <p>
+                                                    message.Please visit the nearest hero dealership for
+                                                    detailed inspection and spot buy offer and also get
+                                                    a certification report for free!
+                                                </p>
+
+                                                <div class="valuePopup">
+                                                    <div class="valuePopupContent">
+                                                        <ol>
+                                                            <li>
+                                                                The resale value of the two-wheeler as
+                                                                estimated by “Wheels of Trust” valuation
+                                                                methodology is indicative and may vary based
+                                                                actual condition of the vehicle and market
+                                                                demand.
+                                                            </li>
+                                                            <li>
+                                                                Wheels of Trust cannot be held responsible for
+                                                                any losses incurred or liability arising by
+                                                                relying on this indicative resale value.
+                                                            </li>
+                                                            <li>
+                                                                The user allows Wheels of Trust to share their
+                                                                information with automotive dealers for
+                                                                contacting them with offers and services.
+                                                            </li>
+                                                            <li>
+                                                                Wheels of Trust is a registered trademark of
+                                                                Hero MotoCorp Ltd. Engaged in the pre-owned
+                                                                two-wheeler services. The user allows Wheels
+                                                                of Trust to use this information for their
+                                                                internal analytics for refining their service
+                                                                offerings.
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="storeList">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th colspan="4">
+                                                                    Select Your Preferred Nearby Dealer:
+                                                                </th>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td width="50" class="check-item">
+                                                                    <div class="checkbox check-dealer-checkbox">
+                                                                        <label>
+                                                                            <input class="check-dealer" data-id="3455"
+                                                                                data-number="9289922495"
+                                                                                data-sms-number="8800494202"
+                                                                                data-address="Sohna Gurgaon Road, 122001"
+                                                                                data-center="Jasodha Auto"
+                                                                                data-center-id="HR26O074"
+                                                                                data-dealer-code="10800" name="check"
+                                                                                type="radio" value="3455" />
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Jasodha Auto</td>
+                                                                <td>
+                                                                    <a href="tel:9289922495">9289922495</a>
+                                                                </td>
+                                                                <td>Sohna Gurgaon Road, 122001</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" class="check-item">
+                                                                    <div class="checkbox check-dealer-checkbox">
+                                                                        <label>
+                                                                            <input class="check-dealer" data-id="4510"
+                                                                                data-number="9289922051"
+                                                                                data-sms-number="9116861181"
+                                                                                data-address="Mehrauli Road, 122001"
+                                                                                data-center="Autoneeds"
+                                                                                data-center-id="HR26O089"
+                                                                                data-dealer-code="10022" name="check"
+                                                                                type="radio" value="4510" />
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Autoneeds</td>
+                                                                <td>
+                                                                    <a href="tel:9289922051">9289922051</a>
+                                                                </td>
+                                                                <td>Mehrauli Road, 122001</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" class="check-item">
+                                                                    <div class="checkbox check-dealer-checkbox">
+                                                                        <label>
+                                                                            <input class="check-dealer" data-id="4716"
+                                                                                data-number="9289923046"
+                                                                                data-sms-number="8287109718"
+                                                                                data-address="Badshapur, 122001"
+                                                                                data-center="Himgiri Automobiles Pvt Ltd."
+                                                                                data-center-id="HR26O259"
+                                                                                data-dealer-code="11845" name="check"
+                                                                                type="radio" value="4716" />
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Himgiri Automobiles Pvt Ltd.</td>
+                                                                <td>
+                                                                    <a href="tel:9289923046">9289923046</a>
+                                                                </td>
+                                                                <td>Badshapur, 122001</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" class="check-item">
+                                                                    <div class="checkbox check-dealer-checkbox">
+                                                                        <label>
+                                                                            <input class="check-dealer" data-id="48756"
+                                                                                data-number="9289923221"
+                                                                                data-sms-number="9015136778"
+                                                                                data-address="13 Main, Basai Rd, 122001"
+                                                                                data-center="Sharma Agencies"
+                                                                                data-center-id="HR26O3445"
+                                                                                data-dealer-code="12169" name="check"
+                                                                                type="radio" value="48756" />
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Sharma Agencies</td>
+                                                                <td>
+                                                                    <a href="tel:9289923221">9289923221</a>
+                                                                </td>
+                                                                <td>13 Main, Basai Rd, 122001</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-inline pull-right">
+                                        <li>
+                                            <button type="button" class="default-btn prev-step">
+                                                Back
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="default-btn next-step">
+                                                Finish
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
-                          </div>
-                          <div class="storeList">
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th colspan="4">
-                                    Select Your Preferred Nearby Dealer:
-                                  </th>
-                                </tr>
-
-                                <tr>
-                                  <td width="50" class="check-item">
-                                    <div class="checkbox check-dealer-checkbox">
-                                      <label>
-                                        <input
-                                          class="check-dealer"
-                                          data-id="3455"
-                                          data-number="9289922495"
-                                          data-sms-number="8800494202"
-                                          data-address="Sohna Gurgaon Road, 122001"
-                                          data-center="Jasodha Auto"
-                                          data-center-id="HR26O074"
-                                          data-dealer-code="10800"
-                                          name="check"
-                                          type="radio"
-                                          value="3455"
-                                        />
-                                      </label>
-                                    </div>
-                                  </td>
-                                  <td>Jasodha Auto</td>
-                                  <td>
-                                    <a href="tel:9289922495">9289922495</a>
-                                  </td>
-                                  <td>Sohna Gurgaon Road, 122001</td>
-                                </tr>
-                                <tr>
-                                  <td width="50" class="check-item">
-                                    <div class="checkbox check-dealer-checkbox">
-                                      <label>
-                                        <input
-                                          class="check-dealer"
-                                          data-id="4510"
-                                          data-number="9289922051"
-                                          data-sms-number="9116861181"
-                                          data-address="Mehrauli Road, 122001"
-                                          data-center="Autoneeds"
-                                          data-center-id="HR26O089"
-                                          data-dealer-code="10022"
-                                          name="check"
-                                          type="radio"
-                                          value="4510"
-                                        />
-                                      </label>
-                                    </div>
-                                  </td>
-                                  <td>Autoneeds</td>
-                                  <td>
-                                    <a href="tel:9289922051">9289922051</a>
-                                  </td>
-                                  <td>Mehrauli Road, 122001</td>
-                                </tr>
-                                <tr>
-                                  <td width="50" class="check-item">
-                                    <div class="checkbox check-dealer-checkbox">
-                                      <label>
-                                        <input
-                                          class="check-dealer"
-                                          data-id="4716"
-                                          data-number="9289923046"
-                                          data-sms-number="8287109718"
-                                          data-address="Badshapur, 122001"
-                                          data-center="Himgiri Automobiles Pvt Ltd."
-                                          data-center-id="HR26O259"
-                                          data-dealer-code="11845"
-                                          name="check"
-                                          type="radio"
-                                          value="4716"
-                                        />
-                                      </label>
-                                    </div>
-                                  </td>
-                                  <td>Himgiri Automobiles Pvt Ltd.</td>
-                                  <td>
-                                    <a href="tel:9289923046">9289923046</a>
-                                  </td>
-                                  <td>Badshapur, 122001</td>
-                                </tr>
-                                <tr>
-                                  <td width="50" class="check-item">
-                                    <div class="checkbox check-dealer-checkbox">
-                                      <label>
-                                        <input
-                                          class="check-dealer"
-                                          data-id="48756"
-                                          data-number="9289923221"
-                                          data-sms-number="9015136778"
-                                          data-address="13 Main, Basai Rd, 122001"
-                                          data-center="Sharma Agencies"
-                                          data-center-id="HR26O3445"
-                                          data-dealer-code="12169"
-                                          name="check"
-                                          type="radio"
-                                          value="48756"
-                                        />
-                                      </label>
-                                    </div>
-                                  </td>
-                                  <td>Sharma Agencies</td>
-                                  <td>
-                                    <a href="tel:9289923221">9289923221</a>
-                                  </td>
-                                  <td>13 Main, Basai Rd, 122001</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
+                        </form>
                     </div>
-
-                    <ul class="list-inline pull-right">
-                      <li>
-                        <button type="button" class="default-btn prev-step">
-                          Back
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="default-btn next-step">
-                          Finish
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="clearfix"></div>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script>
-      function otpless(otplessUser) {
-        var waName = otplessUser.waName;
-        var waNumber = otplessUser.waNumber;
+        function otpless(otplessUser) {
+            var waName = otplessUser.waName;
+            var waNumber = otplessUser.waNumber;
 
-        const successPara = document.getElementById("success-info");
-        successPara.innerHTML = `Hi, ${waName}<br /> Phone Number :${waNumber}`;
-        console.log(waName, waNumber);
-        // Signup/signin the user and redirect to next page
-      }
-
-      window.onload = () => {
-        const steps = localStorage.getItem("stepCount");
-        if (steps !== null && steps > 0) {
-          const tabPaneDivs = document.querySelectorAll(".tab-pane");
-          const presentationDivs = document.querySelectorAll(".dots");
-
-          for (let i = 0; i < tabPaneDivs.length; i++) {
-            tabPaneDivs[i].classList.remove("active");
-          }
-
-          for (let i = 0; i < presentationDivs.length; i++) {
-            presentationDivs[i].classList.remove("active");
-          }
-          presentationDivs[steps - 1].classList.add("active");
-          const activeDiv = document.querySelector(`#step${steps}`);
-          activeDiv.classList.add("active");
+            const otplessDiv = document.getElementById("otpless");
+            otplessDiv.style.display = "none";
+            const successPara = document.getElementById("success-info");
+            successPara.innerHTML = `Hi, ${waName}<br /> Phone Number :${waNumber}`;
+            console.log(waName, waNumber);
+            // Signup/signin the user and redirect to next page
         }
 
-        stateSelect.value = localStorage.getItem("state");
-        citySelect.value = localStorage.getItem("city");
-        companySelect.value = localStorage.getItem("company");
-        modelSelect.value = localStorage.getItem("model");
-      };
+        window.onload = () => {
+            const steps = localStorage.getItem("stepCount");
+            if (steps !== null && steps > 0) {
+                const tabPaneDivs = document.querySelectorAll(".tab-pane");
+                const presentationDivs = document.querySelectorAll(".dots");
 
-      // Get the select elements
-      const nextBtns = document.getElementsByClassName("next-step");
-      let stepCount = localStorage.getItem("stepCount") || 1;
+                for (let i = 0; i < tabPaneDivs.length; i++) {
+                    tabPaneDivs[i].classList.remove("active");
+                }
 
-      for (let i = 0; i < nextBtns.length; i++) {
-        nextBtns[i].addEventListener("click", stepcountListener);
-      }
+                for (let i = 0; i < presentationDivs.length; i++) {
+                    presentationDivs[i].classList.remove("active");
+                }
+                presentationDivs[steps - 1].classList.add("active");
+                const activeDiv = document.querySelector(`#step${steps}`);
+                activeDiv.classList.add("active");
+            }
 
-      function stepcountListener() {
-        if (stepCount > 4) return;
-        stepCount++;
-        console.log(stepCount);
-        localStorage.setItem("stepCount", stepCount);
-      }
+            stateSelect.value = localStorage.getItem("state");
+            citySelect.value = localStorage.getItem("city");
+            companySelect.value = localStorage.getItem("company");
+            modelSelect.value = localStorage.getItem("model");
+        };
 
-      const prevBtns = document.getElementsByClassName("prev-step");
+        // Get the select elements
+        const nextBtns = document.getElementsByClassName("next-step");
+        let stepCount = localStorage.getItem("stepCount") || 1;
 
-      for (let i = 0; i < prevBtns.length; i++) {
-        prevBtns[i].addEventListener("click", prevcountListener);
-      }
-
-      function prevcountListener() {
-        if (stepCount < 1) return;
-        stepCount--;
-        console.log(stepCount);
-        localStorage.setItem("stepCount", stepCount);
-      }
-
-      const stateSelect = document.getElementById("state");
-      const citySelect = document.getElementById("city");
-      const companySelect = document.getElementById("company");
-      const modelSelect = document.getElementById("model");
-
-      // Add event listener to each select input to store the selected value in local storage
-      stateSelect.addEventListener("change", () => {
-        localStorage.setItem("state", stateSelect.value);
-      });
-
-      citySelect.addEventListener("change", () => {
-        localStorage.setItem("city", citySelect.value);
-      });
-
-      companySelect.addEventListener("change", () => {
-        localStorage.setItem("company", companySelect.value);
-      });
-
-      modelSelect.addEventListener("change", () => {
-        localStorage.setItem("model", modelSelect.value);
-      });
-
-      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-      // Add event listeners to all checkboxes
-      checkboxes.forEach((checkbox) => {
-        checkbox.addEventListener("change", () => {
-          const name = checkbox.name;
-          const value = checkbox.checked ? checkbox.value : null;
-          localStorage.setItem(name, value);
-        });
-
-        // Load stored value on page load
-        const storedValue = localStorage.getItem(checkbox.name);
-        if (storedValue === checkbox.value) {
-          checkbox.checked = true;
+        for (let i = 0; i < nextBtns.length; i++) {
+            nextBtns[i].addEventListener("click", stepcountListener);
         }
-      });
 
-      // ------------step-wizard-------------
-      $(document).ready(function () {
-        $(".nav-tabs > li a[title]").tooltip();
+        function stepcountListener() {
+            if (stepCount > 4) return;
+            stepCount++;
+            console.log(stepCount);
+            localStorage.setItem("stepCount", stepCount);
+        }
 
-        //Wizard
-        $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
-          var target = $(e.target);
+        const prevBtns = document.getElementsByClassName("prev-step");
 
-          if (target.parent().hasClass("disabled")) {
-            return false;
-          }
+        for (let i = 0; i < prevBtns.length; i++) {
+            prevBtns[i].addEventListener("click", prevcountListener);
+        }
+
+        function prevcountListener() {
+            if (stepCount < 1) return;
+            stepCount--;
+            console.log(stepCount);
+            localStorage.setItem("stepCount", stepCount);
+        }
+
+        const stateSelect = document.getElementById("state");
+        const citySelect = document.getElementById("city");
+        const companySelect = document.getElementById("company");
+        const modelSelect = document.getElementById("model");
+
+        // Add event listener to each select input to store the selected value in local storage
+        stateSelect.addEventListener("change", () => {
+            localStorage.setItem("state", stateSelect.value);
         });
 
-        $(".next-step").click(function (e) {
-          var active = $(".wizard .nav-tabs li.active");
-          active.next().removeClass("disabled");
-          $(".tab-pane")
-            .addClass("animated fadeInRight")
-            .removeClass("fadeInLeft");
-          nextTab(active);
+        citySelect.addEventListener("change", () => {
+            localStorage.setItem("city", citySelect.value);
         });
-        $(".prev-step").click(function (e) {
-          var active = $(".wizard .nav-tabs li.active");
-          $(".tab-pane")
-            .addClass("animated fadeInLeft")
-            .removeClass("fadeInRight");
-          prevTab(active);
+
+        companySelect.addEventListener("change", () => {
+            localStorage.setItem("company", companySelect.value);
         });
-      });
 
-      function nextTab(elem) {
-        $(elem).next().find('a[data-toggle="tab"]').click();
-      }
-      function prevTab(elem) {
-        $(elem).prev().find('a[data-toggle="tab"]').click();
-      }
+        modelSelect.addEventListener("change", () => {
+            localStorage.setItem("model", modelSelect.value);
+        });
 
-      $(".nav-tabs").on("click", "li", function () {
-        $(".nav-tabs li.active").removeClass("active");
-        $(this).addClass("active");
-      });
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        // Add event listeners to all checkboxes
+        checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener("change", () => {
+                const name = checkbox.name;
+                const value = checkbox.checked ? checkbox.value : null;
+                localStorage.setItem(name, value);
+            });
+
+            // Load stored value on page load
+            const storedValue = localStorage.getItem(checkbox.name);
+            if (storedValue === checkbox.value) {
+                checkbox.checked = true;
+            }
+        });
+
+        // ------------step-wizard-------------
+        $(document).ready(function () {
+            $(".nav-tabs > li a[title]").tooltip();
+
+            //Wizard
+            $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+                var target = $(e.target);
+
+                if (target.parent().hasClass("disabled")) {
+                    return false;
+                }
+            });
+
+            $(".next-step").click(function (e) {
+                var active = $(".wizard .nav-tabs li.active");
+                active.next().removeClass("disabled");
+                $(".tab-pane")
+                    .addClass("animated fadeInRight")
+                    .removeClass("fadeInLeft");
+                nextTab(active);
+            });
+            $(".prev-step").click(function (e) {
+                var active = $(".wizard .nav-tabs li.active");
+                $(".tab-pane")
+                    .addClass("animated fadeInLeft")
+                    .removeClass("fadeInRight");
+                prevTab(active);
+            });
+        });
+
+        function nextTab(elem) {
+            $(elem).next().find('a[data-toggle="tab"]').click();
+        }
+        function prevTab(elem) {
+            $(elem).prev().find('a[data-toggle="tab"]').click();
+        }
+        $(".nav-tabs").on("click", "li", function () {
+            $(".nav-tabs li.active").removeClass("active");
+            $(this).addClass("active");
+        });
     </script>
-  </body>
+</body>
+
 </html>
